@@ -1,3 +1,4 @@
+alert("Happy Graduation bub <3")
 alert("I am so proud of you babe")
 alert("lots of endless work and you're finally done!")
 alert("I am so excited for you, also jealous.. hehe, but overall so excited to see what the future holds for you")
