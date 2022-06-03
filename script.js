@@ -2,33 +2,33 @@ alert("I am so proud of you babe")
 alert("lots of endless work and you're finally done!")
 alert("I am so excited for you, also jealous.. hehe, but overall so excited to see what the future holds for you")
 alert("I love you and here's to many more accomplishments")
-alert("Now it's time to get some head, I mean bread hahaha") 
+alert("Now it's time to get some head, I mean bread hahaha")
 alert("I have no idea how I did this btw")
 alert("but I wanted to impress you")
 alert("but anyways one last thing")
-// do this for 30 seconds 
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-var duration = 30 * 1000; 
+  // do this for 30 seconds 
+ 
+var duration = 30 * 1000;
 var end = Date.now() + duration;
 
 (function frame() {
   // launch a few confetti from the left edge 
+  confetti({
+    particleCount: 7,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 }
+  });
+  // and launch a few confetti from the right edge 
     confetti({
-      particleCount: 7,
-      angle: 60,
-      spread: 55,
-      origin: { x: 0 }
-    });
-    // and launch a few confetti from the right edge 
-    confetti({
-      particleCount: 7,
-      angle: 120,
-      spread: 55,
-      origin: { x: 1 }
-    });
+    particleCount: 7,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 }
+  });
 
   // keep going until we are out of time 
-  if (Date.now() < end) { 
+  if (Date.now() < end) {
     requestAnimationFrame(frame);
   }
 }());
